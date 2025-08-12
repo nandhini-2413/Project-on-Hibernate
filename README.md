@@ -1,1 +1,1 @@
-# Project-on-Hibernate
+Hibernate is an open-source Object-Relational Mapping (ORM) framework for Java applications. Its primary purpose is to simplify database interactions by providing a bridge between the object-oriented world of Java and the relational world of databases. 
