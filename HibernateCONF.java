@@ -1,4 +1,5 @@
-package com.flipkart.Flipkart;
+package com.bookinfo.Bookinfo;
+
 
 	import java.util.Properties;
 
@@ -23,6 +24,8 @@ package com.flipkart.Flipkart;
 		{
 
 			try {
+
+
 
 	// To configure 
 
@@ -60,25 +63,25 @@ package com.flipkart.Flipkart;
 
 	        cnf.setProperty("hibernate.show_sql", "true");
 
-	        cnf.addAnnotatedClass(Product.class);
+	        cnf.addAnnotatedClass(Book.class);
 
-	        return cnf.buildSessionFactory(
+	return cnf.buildSessionFactory(
 
-	                new StandardServiceRegistryBuilder().applySettings(cnf.getProperties()).build()
+	            new StandardServiceRegistryBuilder().applySettings(cnf.getProperties()).build()
 
-	            );
+	        );
 
-	        } catch (Throwable ex) {
+	    } catch (Throwable ex) {
 
-	            throw new ExceptionInInitializerError("Initial SessionFactory creation failed: " + ex);
+	        throw new ExceptionInInitializerError("Initial SessionFactory creation failed: " + ex);
 
-	        }	
+	    }	
 
-	    	}
+		}
 
-	    }
+	}
 
-	   
+
 
 
 
