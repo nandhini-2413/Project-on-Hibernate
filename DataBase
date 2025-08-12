@@ -1,0 +1,10 @@
+Database for project(I can take as the simple dta wants to add more data also
+-------------------------------------------------------------------------------------
+USE flipkart;
+ALTER USER 'root'@'localhost'identified BY 'root';
+CREATE TABLE product(pId int(10), pName VARCHAR(20),Price int(30));
+INSERT INTO product VALUES(1001,'lg',1000000);
+INSERT INTO product VALUES(1002,'Realme',160000);
+SELECT  * FROM product;
+USE Flipkart;
+SELECT * FROM bookinfo;
